@@ -1,0 +1,19 @@
+- name: install nginx
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: install nginx
+    ansible.builtin.package:
+      name: ntpdate
+      state: present
+
+- name: start nginx
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: start nginx
+    ansible.builtin.service:
+      name: httpd
+      state: started
+      enabled: yes
+   
