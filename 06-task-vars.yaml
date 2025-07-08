@@ -9,10 +9,10 @@
   - name: print course details
     vars:
       COURSE: Ansible
-    ansible.duiltin.debug:
+    ansible.builtin.debug:
       msg:"Hello {{ COURSE }},Course Duraion {{ DURATION }},Trainer is {{ TRAINEE }}"
 
   tasks:
   - name: print course details
-    ansible.duiltin.debug:
+    ansible.builtin.debug:
       msg:"Hello {{ COURSE }},Course Duraion {{ DURATION }},Trainer is {{ TRAINEE }}"
