@@ -1,12 +1,12 @@
 - name: play level variables
-  host: local
+  hosts: local
   connection: local
   vars:
     COURSE: Ansible
     DURATION: 10hrs
     TRAINEE: Jyothi
   tasks:
-  - name: pprint course details
+  - name: print course details
     ansible.builtin.debug:
       #variables should be surrounded by ""
       msg: "Hello {{ COURSE }},Course Duration {{ DURATION }},Trainer is {{ TRAINEE }}"
