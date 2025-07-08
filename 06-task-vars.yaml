@@ -1,5 +1,5 @@
 - name: task level vaiables
-  host: local
+  hosts: local
   connection: local
   vars:
     COURSE: Devops with AWS
