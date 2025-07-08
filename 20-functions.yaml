@@ -8,6 +8,6 @@
 
   - name: split variables
     vars:
-      NAMES: Rames,Suresh,Sathish
+      NAMES: Ramesh,Suresh,Sathish
     ansible.builtin.debug:
       msg: "Hello {{ NAMES | split(',') }}"
